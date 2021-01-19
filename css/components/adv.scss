@@ -5,7 +5,7 @@ display: flex;
     flex:1;
     position: relative;
     &:before{
-        content:url("../../img/adv/shape.png");
+        content:url("../img/adv/shape.png");
         position: absolute;
         top: 52px;
         right: 0;
@@ -26,11 +26,11 @@ padding-right: 0;
 }
 
 .adv_orn{
-    background: url(../../img/adv/orn.png) no-repeat bottom left;
+    background: url(../img/adv/orn.png) no-repeat bottom left;
     position: relative;
 
     &:after{
-        content: url(../../img/adv/berry.png);
+        content: url(../img/adv/berry.png);
         position: absolute;
         bottom: -258px;
     }
