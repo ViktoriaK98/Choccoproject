@@ -1,0 +1,29 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+
+$blue: #61C4D9;
+$darkGreen:#365A49;
+$z-fixed-menu:100;
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+@import "layout";
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap');
+
+@import "components/snack";
+@import "components/header";
+@import"components/features";
+@import "components/feature";
+@import "components/btn";
+@import "components/section";
+@import "components/adv";
+@import "components/advantage";
+@import "components/reviews";
+@import "components/interactive-avatar";
+@import "components/form";
+@import "components/order";
+@import "components/radio";
+@import "components/map";
+@import"components/fixedmenu";
