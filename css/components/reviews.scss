@@ -1,17 +1,17 @@
 
 .reviews_berry{
-    background: url(../../img/reviews/berry2.png) no-repeat top right,
-     url(../../img/reviews/ornament.png) no-repeat bottom left;
+    background: url(../img/reviews/berry2.png) no-repeat top right,
+     url(../img/reviews/ornament.png) no-repeat bottom left;
      position: relative;
     &:after{
-        content: url(../../img/reviews/berry3.png);
+        content: url(../img/reviews/berry3.png);
         position: absolute;
         bottom: 64px;
     }
 }
 
 .reviews__display{
-background: url(../../img/reviews/berry.png) right top no-repeat;
+background: url(../img/reviews/berry.png) right top no-repeat;
     background-color: #F8FAF9;
     padding: 50px 45px 34px;
     width: 940px;
