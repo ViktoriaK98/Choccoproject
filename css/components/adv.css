@@ -7,7 +7,7 @@
   position: relative;
 }
 .adv__items:before {
-  content: url("../../img/adv/shape.png");
+  content: url("../img/adv/shape.png");
   position: absolute;
   top: 30px;
   right: 0;
