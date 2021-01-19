@@ -73,7 +73,7 @@ img {
 }
 
 .snack {
-  background: url(../../img/header/snacks.png) left 90% center no-repeat, url(../../img/header/leaf1.png) no-repeat right 3% bottom 29%, url(../../img/header/berry1.png) no-repeat right 21% top 89%, url(../../img/header/ornament.png) right bottom no-repeat;
+  background: url(../img/header/snacks.png) left 90% center no-repeat, url(../img/header/leaf1.png) no-repeat right 3% bottom 29%, url(../img/header/berry1.png) no-repeat right 21% top 89%, url(../img/header/ornament.png) right bottom no-repeat;
   background-color: #61C4D9;
   height: 100vh;
   min-height: 650px;
@@ -247,7 +247,7 @@ img {
   position: relative;
 }
 .adv__items:before {
-  content: url("../../img/adv/shape.png");
+  content: url("../img/adv/shape.png") ;
   position: absolute;
   top: 52px;
   right: 0;
@@ -264,11 +264,11 @@ img {
 }
 
 .adv_orn {
-  background: url(../../img/adv/orn.png) no-repeat bottom left;
+  background: url(../img/adv/orn.png) no-repeat bottom left;
   position: relative;
 }
 .adv_orn:after {
-  content: url(../../img/adv/berry.png);
+  content: url(../img/adv/berry.png);
   position: absolute;
   bottom: -258px;
 }
@@ -314,17 +314,17 @@ img {
 }
 
 .reviews_berry {
-  background: url(../../img/reviews/berry2.png) no-repeat top right, url(../../img/reviews/ornament.png) no-repeat bottom left;
+  background: url(../img/reviews/berry2.png) no-repeat top right, url(../img/reviews/ornament.png) no-repeat bottom left;
   position: relative;
 }
 .reviews_berry:after {
-  content: url(../../img/reviews/berry3.png);
+  content: url(../img/reviews/berry3.png);
   position: absolute;
   bottom: 64px;
 }
 
 .reviews__display {
-  background: url(../../img/reviews/berry.png) right top no-repeat;
+  background: url(../img/reviews/berry.png) right top no-repeat;
   background-color: #F8FAF9;
   padding: 50px 45px 34px;
   width: 940px;
@@ -476,17 +476,17 @@ img {
 }
 
 .order-section {
-  background: url(../../img/form/pattern.png);
+  background: url(../img/form/pattern.png);
   position: relative;
 }
 .order-section:before {
-  content: url(../../img/form/bluberry.png);
+  content: url(../img/form/bluberry.png);
   bottom: 50px;
   left: 141px;
   position: absolute;
 }
 .order-section:after {
-  content: url(../../img/form/berryd.png);
+  content: url(../img/form/berryd.png);
   position: absolute;
   right: 0;
   top: -157px;
@@ -502,7 +502,7 @@ img {
   border-radius: 6px;
 }
 .radio--checkbox .radio__visible:before {
-  background: url(../../img/form/tick.png) no-repeat center;
+  background: url(../img/form/tick.png) no-repeat center;
 }
 
 .radio__elem {
