@@ -1,24 +1,31 @@
-.order-title{
-    color:#365A49;
-    margin-bottom: 83px;
+.order-title {
+    color: #365A49;
+    margin-bottom: rem(83px);
 }
 
 .order-section {
-    background:url(../img/form/pattern.png);
-position: relative;
+    background: url(../img/form/pattern.png);
+    position: relative;
 
-&:before{
-    content: url(../img/form/bluberry.png);
-    bottom: 50px;
-    left: 141px;
-    position: absolute;
-}
+    &:before {
+        content: url(../img/form/bluberry.png);
+        bottom: rem(50px);
+        left: rem(141px);
+        position: absolute;
+
+        @include tablets {
+            display: none;
+        }
+
+    }
 
 
-&:after{
-    content: url(../img/form/berryd.png);
-    position: absolute;
-    right: 0;
-    top: -157px;
-}
+
+
+    &:after {
+        content: url(../img/form/berryd.png);
+        position: absolute;
+        right: 0;
+        top: rem(-157px);
+    }
 }

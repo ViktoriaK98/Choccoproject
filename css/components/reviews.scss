@@ -1,86 +1,127 @@
+.reviews__berry {
+    background: url(../img/reviews/ornament.png) no-repeat bottom left;
+    position: relative;
 
-.reviews_berry{
-    background: url(../img/reviews/berry2.png) no-repeat top right,
-     url(../img/reviews/ornament.png) no-repeat bottom left;
-     position: relative;
-    &:after{
+    @include tablets {
+        background-position: bottom -27%;
+    }
+
+    &:before {
         content: url(../img/reviews/berry3.png);
         position: absolute;
-        bottom: 64px;
+        bottom: rem(40px);
+
+        @include tablets {
+            bottom: rem (20px);
+        }
+    }
+
+
+
+    &:after {
+        position: absolute;
+        content: url(../img/reviews/berry2.png);
+        top: rem(100px);
+        right: rem(30px);
+
+        @include phones {
+            right: 15px;
+        }
     }
 }
 
-.reviews__display{
-background: url(../img/reviews/berry.png) right top no-repeat;
+.reviews__display {
+    background: url(../img/reviews/berry.png) right top no-repeat;
     background-color: #F8FAF9;
-    padding: 50px 45px 34px;
-    width: 940px;
-    margin-bottom: 15px;
-overflow: hidden;
-position: relative;
+    padding: rem(50px) rem(45px) rem(34px);
+    width: rem(940px);
+    margin-bottom: rem(15px);
+    overflow: hidden;
+    position: relative;
 
+    @include tablets {
+        width: rem(724px);
+        height: rem(418px);
+    }
 
-    &:before{
+    @include phones {
+        width: rem(460px);
+        height: rem(418px);
+    }
+
+    &:before {
         content: "";
         display: block;
         position: absolute;
-        height: 90px;
-        width: 90px;
+        height: rem(90px);
+        width: rem(90px);
         background: white;
         border-radius: 50%;
         left: 50%;
         transform: translateX(-50%);
-        top:-65px;
+        top: rem(-65px);
     }
 }
 
-.reviews__display-inner{
-display: flex;
+.reviews__display-inner {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
 }
 
-.reviews__avatar{
-    width: 253px;
-    height: 264px;
-    margin-right: 37px;
+.reviews__avatar {
+    width: rem(253px);
+    height: rem(264px);
+    margin-right: rem(37px);
+
+    @include tablets {
+        width: rem(130px);
+        height: rem(132px);
+    }
 }
 
-.reviews__avatar-icon{
-object-fit: cover;
-width: 100%;
-height: 100%;
+.reviews__avatar-icon {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
-.reviews__content{
+.reviews__content {
     flex: 1;
 }
 
-.reviews_title{
-    font-weight:700 ;
-    font-size: 27px;
+.reviews__title {
+    font-weight: 700;
+    font-size: rem(27px);
     color: #292929;
-    margin-bottom: 12px;
+    margin-bottom: rem(12px);
 }
 
-.reviews__text{
-    margin-bottom: 25px;
-    width: 463px;
+.reviews__text {
+    margin-bottom: rem(25px);
+    width: rem(463px);
 }
 
-.reviews__author{
-font-weight: bold;
-color: #292929;
-font-size: 18px;
+.reviews__author {
+    font-weight: bold;
+    color: #292929;
+    font-size: rem(18px);
 }
 
-.reviews__switcher{
+.reviews__switcher {
     display: flex;
     justify-content: center;
 }
 
 .reviews_switcher-item {
-    margin-right: 6px;
+    margin-right: rem(6px);
 
-    &:last-child{
+    &:last-child {
         margin-right: 0;
     }
 }

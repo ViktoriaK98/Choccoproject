@@ -1,0 +1,15 @@
+.humburger {
+  width: 24px;
+  height: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+.humburger__plank {
+  display: block;
+  background: #fff;
+  height: 5px;
+  border-radius: 10px;
+}
