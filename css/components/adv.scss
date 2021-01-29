@@ -1,15 +1,29 @@
 .adv{
 display: flex;
+
+@include phones{
+    flex-direction: column;
+}
 }
 .adv__items{
     flex:1;
     position: relative;
+
+    @include phones{
+        margin-bottom: rem(19px);
+    }
+
     &:before{
         content:url("../img/adv/shape.png");
         position: absolute;
-        top: 52px;
+        width:rem (74px);
+        height:rem(24px);
+        top: rem(52px);
         right: 0;
         transform: translateX(81%);
+    }
+    &:before{
+        @include phones{display:none;}
     }
 
     &:first-child{
@@ -25,14 +39,26 @@ padding-right: 0;
     }
 }
 
-.adv_orn{
+.adv__orn{
     background: url(../img/adv/orn.png) no-repeat bottom left;
     position: relative;
+
+    @include tablets{
+background: url(../img/adv/orn.png) top 59% left no-repeat;
+    }
+
+    @include phones{
+        background:none;
+    }
 
     &:after{
         content: url(../img/adv/berry.png);
         position: absolute;
-        bottom: -258px;
+        bottom: rem(-258px);
+
+        @include phones{
+            display: none;
+        }
     }
    
 }

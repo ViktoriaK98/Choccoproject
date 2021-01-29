@@ -1,42 +1,103 @@
-
 .snack {
-    background: url(../img/header/snacks.png) left 90% center no-repeat, 
-    url(../img/header/leaf1.png) no-repeat right 3% bottom 29%,
-    url(../img/header/berry1.png) no-repeat right 21% top 89% ,
-    url(../img/header/ornament.png) right bottom no-repeat;
-    
+    background: url(../img/header/ornament.png) right bottom no-repeat;
+
     background-color: $blue;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     color: #fff;
     position: relative;
 
+    @include tablets {
+        background-position: right bottom 87%;
+    }
+
+    &:after,
+    &:before {
+        @include tablets {
+            display: none;
+        }
+    }
+
+    &:before {
+        position: absolute;
+        content: url(../img/header/leaf3.png);
+        bottom: rem(-51px);
+        left: rem(25px);
+    }
+
+    &:after {
+        position: absolute;
+        content: url(../img/header/berries_leaves.png);
+        right: 91px;
+        bottom: -60px;
+
+    }
+
 }
 
-.snack__container{
+
+
+.snack__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 24px 0 49px 0;
+    padding: rem(24px) 0 rem(49px) 0;
+    background: url(../img/header/snacks.png) right 84% no-repeat;
+
+    @include tablets {
+        background: none;
+    }
+
 }
 
-.snack__title-section{
+
+.snack__title-section {
     width: 46%;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &:before {
+            content: url(../img/header/bars.png);
+        }
+    }
 }
 
-.snack__main-title{
-font-size: 48px;
-line-height: 1.1;
-font-weight: 700;
-margin-bottom: 17px;
-text-transform: uppercase;
+.snack__icons-section {
+
+    @include tablets {
+        display:none;
+    }
+}
+
+
+
+.snack__main-title {
+    font-size: rem(48px);
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: rem(17px);
+    text-transform: uppercase;
 
 }
 
-.snack__title-desc{
-    font-weight:400;
-    font-size: 21px;
-    margin-bottom: 32px;
+.snack__title-desc {
+    font-weight: 400;
+    font-size: rem(21px);
+    margin-bottom: rem(32px);
     padding-right: 10%;
+
+    @include tablets {
+        width: 58%;
+    }
+    @include phones {
+        width: 78%;
+    }
 }

@@ -1,0 +1,23 @@
+
+.socials{
+    position: absolute;
+    right: rem(30px);
+    bottom: rem(28px);
+}  
+  .socials_item{
+      margin-right:rem(14px);
+  }
+
+
+.socials__list{
+    position: relative;
+}  
+
+
+.socials__link{
+    display: block;
+    text-decoration: none;
+}
+
+.socials__item {
+    display: inline-block;}
