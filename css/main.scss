@@ -1,10 +1,14 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+$tablets:768px;
+$phones:480px;
 
 $blue: #61C4D9;
 $darkGreen:#365A49;
 $z-fixed-menu:100;
+
+@import "media";
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 
@@ -27,3 +31,7 @@ $z-fixed-menu:100;
 @import "components/radio";
 @import "components/map";
 @import"components/fixedmenu";
+@import"components/contacts";
+@import "components/footer";
+@import "components/socials";
+@import "components/humburger";
